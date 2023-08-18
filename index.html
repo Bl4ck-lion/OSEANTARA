@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poros Maritim Indonesia</title>
-mixin cameras
-  .camera.-x
-    .camera.-y
-      .camera.-z
-        block
-
-mixin bodyScales
-  .scale.-top.-front
-  .scale.-top.-back
-  .scale.-bottom.-front
-  .scale.-bottom.-back
-
-+cameras()
-  .under-sea
-    .blowing-bubbles
-      - for(i = 0; i < 40; i++)
-        .bubble
-    .swiming-fishes
-      - for(i = 0; i < 10; i++)
-        .swim
-          .depth
-            .rotate
-              .fish-component
-                .shadow
-                .fish
-                  .fish-body
-                    .half.-left
-                      +bodyScales()
-                    .half.-right
-                      +bodyScales()
-                  .fish-tail
-                    .scale.-top
-                    .scale.-bottom
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEZA</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>Poros Maritim Indonesia</h1>
-    <p>Poros Maritim Indonesia adalah konsep penting dalam konteks geografi dan ekonomi Indonesia. Poros Maritim merujuk pada posisi strategis Indonesia yang dikelilingi oleh lautan di sekitar wilayahnya. Dengan lebih dari 17 ribu pulau, Indonesia memiliki peran penting dalam perdagangan, transportasi, dan sumber daya alam laut.</p>
-    <p>Sumber daya alam maritim Indonesia meliputi hasil tangkapan ikan, perikanan, minyak dan gas bumi, potensi energi terbarukan seperti energi gelombang dan arus laut, serta beragam hayati laut. Keanekaragaman hayati laut Indonesia menjadikannya salah satu daerah terkaya di dunia.</p>
-    <p>Poros Maritim juga memiliki dampak sosial dan budaya yang signifikan, karena menghubungkan pulau-pulau dan berbagai etnis di Indonesia. Transportasi laut menjadi tulang punggung mobilitas penduduk dan barang di antara pulau-pulau.</p>
-    <p>Dalam era globalisasi, Poros Maritim Indonesia menjadi aset penting dalam penguatan ekonomi dan diplomasi. Negara-negara lain mengakui peran strategis Indonesia dalam perdagangan internasional dan kerjasama maritim.</p>
-</body>
-</html>
 
+<body>
+  <header>
+    <nav>
+      <img src="img/VEZA.svg" alt="logo">
+      <!-- <a href="https://www.freepik.com/free-photo/white-cloud-blue-sky_4201545.htm#query=sky&position=0&from_view=keyword&track=sph">Image by lifeforstock</a> -->
+      <ul>
+        <li class="dropdown">
+          <a href="#">Materi</a>
+          <div class="underline1 underline"></div>
+          <div class="dropdown-content">
+            <a href="#">Perairan</a>
+            <a href="#">Kelautan</a>
+            <a href="#">Dasar Laut</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Glosarium</a>
+          <div class="underline2 underline"></div>
+        </li>
+        <li class="dropdown">
+          <a href="#">About</a>
+          <div class="underline3 underline"></div>
+          <div class="dropdown-content">
+            <a href="about-web.html">About Web</a>
+            <a href="about-us.html">About Us</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <img src="img/sky-background.png" alt="background" class="paralax sky-bg">
+    <img src="img/awan1.png" alt="awan1" class="paralax awan1">
+    <img src="img/awan2.png" alt="awan2" class="paralax awan2">
+    <img src="img/laut1.png" alt="laut1" class="paralax laut1">
+    <img src="img/pulau-kecil-panjang.png" alt="pulau2" class="paralax pulau2">
+    <img src="img/laut2.png" alt="laut2" class="paralax laut2">
+    <img src="img/laut3.png" alt="laut3" class="paralax laut3">
+    <img src="img/laut4.png" alt="laut4" class="paralax laut4">
+    <img src="img/pulau-besar-pendek.png" alt="pulau1" class="paralax pulau1">
+    <img src="img/laut5.png" alt="laut5" class="paralax laut5">
+  </div>
+
+  <main>
+  </main>
+
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>
