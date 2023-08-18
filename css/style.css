@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  z-index: 999;
+  background: rgba(78, 78, 78, 0.13);
+  position: absolute;
+  width: 100%;
+  border-bottom: solid 2px rgba(255, 255, 255, 0.304);
+}
+
+header img {
+  width: 100px;
+  margin: 10px 0;
+}
+
+header nav {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.underline1 {
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background-color: aliceblue;
+  border-radius: 2px;
+}
+.underline2 {
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background-color: aliceblue;
+  border-radius: 2px;
+}
+.underline3 {
+  margin: 0 auto;
+  width: 0%;
+  height: 2px;
+  background-color: aliceblue;
+  border-radius: 2px;
+}
+
+.underline {
+  transition: width 0.15s ease-in-out;
+}
+
+:is(li:hover, li:focus-within) .underline {
+  display: block;
+  width: 70%;
+}
+
+:is(li:hover, li:focus-within) .underline3 {
+  display: block;
+  width: 75%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+    display: block;
+  position: absolute;
+  margin-top: 0.6rem;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  white-space: nowrap;
+  border-radius: 5px;
+  z-index: 1;
+  transition: display 0.15s ease-in-out;
+}
+
+.dropdown-content a {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 2px gray;
+}
+
+.dropdown-content a:first-child {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.dropdown-content a:nth-child(2) {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out 0.05s;
+}
+
+.dropdown-content a:last-child {
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out 0.1s;
+}
+
+:is(.dropdown:hover) .dropdown-content a {
+  display: flex;
+}
+
+:is(.dropdown:focus-within) .dropdown-content a {
+  display: flex;
+  opacity: 1;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sky-bg {
+  position: absolute;
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(5px);
+  z-index: 1;
+}
+
+.awan1 {
+  position: absolute;
+  width: 30%;
+  top: 72%;
+  left: 72%;
+  transform: translate(0, -20%);
+  transform: scale(1.5, 1.5);
+  filter: blur(1px);
+  z-index: 2;
+}
+
+.awan2 {
+  position: absolute;
+  width: 30%;
+  top: 68%;
+  left: 0%;
+  transform: translate(0, -20%);
+  transform: scale(1.5, -1.5) rotate(2deg);
+  filter: blur(1px);
+  z-index: 2;
+}
+
+.laut1 {
+  position: absolute;
+  width: 110%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(1.2px);
+  z-index: 3;
+}
+
+.pulau2 {
+  position: absolute;
+  width: 110%;
+  top: 83%;
+  left: 78%;
+  transform: translate(-50%, -50%) scale(0.4);
+  filter: blur(2.5px);
+  z-index: 4;
+}
+
+.laut2 {
+  position: absolute;
+  width: 110%;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0.9px);
+  z-index: 5;
+}
+
+.laut3 {
+  position: absolute;
+  width: 110%;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0.6px);
+  z-index: 6;
+}
+.laut4 {
+  position: absolute;
+  width: 110%;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(0.3px);
+  z-index: 7;
+}
+
+.pulau1 {
+  position: absolute;
+  width: 110%;
+  top: 145%;
+  left: 21%;
+  transform: translate(-50%, -50%) scale(0.4);
+  filter: blur(1px);
+  z-index: 8;
+}
+
+.laut5 {
+  position: absolute;
+  width: 110%;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
