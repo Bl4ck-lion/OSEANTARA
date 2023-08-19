@@ -174,47 +174,41 @@ header li a {
   width: 100vw;
   transform: translateY(220%) translateZ(-70px) scale(8);
   z-index: 2;
-  filter: blur(2.5px);
 }
 
 .laut1 {
   width: 100vw;
   transform: translateY(217%) translateZ(-65px) scale(7.5);
   z-index: 3;
-  filter: blur(1.2px);
 }
 
 .pulau2 {
   width: 100vw;
   transform: translateY(210%) translateZ(-55px) scale(6.5);
   z-index: 4;
-  filter: blur(1px);
 }
 
 .laut3 {
   width: 100vw;
   transform: translateY(140%) translateZ(-45px) scale(5.5);
   z-index: 6;
-  filter: blur(0.6px);
 }
 
 .pulau3 {
   width: 100vw;
-  transform: translateY(160%) translateZ(-35px) scale(4.5);
+  transform: translateY(150%) translateZ(-35px) scale(4.5);
   z-index: 7;
-  filter: blur(0.3px);
 }
 
 .laut4 {
   width: 100vw;
-  transform: translateY(175%) translateZ(-20px) scale(3);
+  transform: translateY(155%) translateZ(-25px) scale(3.5);
   z-index: 8;
-  filter: blur(0.3px);
 }
 
 .pulau1 {
   width: 100vw;
-  transform: translateY(200%) translateZ(-15px) rotate(2deg) scale(2.5);
+  transform: translateY(191%) translateZ(-15px) rotate(2deg) scale(2.5);
   z-index: 9;
 }
 
