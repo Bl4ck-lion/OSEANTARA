@@ -166,7 +166,7 @@ header li a {
 }
 
 .sky-bg {
-  transform: translateY(300%) translateZ(-80px) scale(9);
+  transform: translateY(300%) translateZ(-80px) scale(10);
   z-index: 1;
 }
 
@@ -191,46 +191,42 @@ header li a {
   filter: blur(1px);
 }
 
-.laut2 {
-  width: 100vw;
-  transform: translateY(200%) translateZ(-47px) scale(5.7);
-  z-index: 5;
-  filter: blur(0.9px);
-}
 .laut3 {
   width: 100vw;
-  transform: translateY(200%) translateZ(-30px) scale(4);
+  transform: translateY(140%) translateZ(-45px) scale(5.5);
   z-index: 6;
   filter: blur(0.6px);
 }
 
 .pulau3 {
   width: 100vw;
-  transform: translateY(200%) translateZ(-25px) scale(3.5);
+  transform: translateY(160%) translateZ(-35px) scale(4.5);
   z-index: 7;
   filter: blur(0.3px);
 }
 
 .laut4 {
   width: 100vw;
-  transform: translateY(200%) translateZ(-20px) scale(3);
+  transform: translateY(175%) translateZ(-20px) scale(3);
   z-index: 8;
   filter: blur(0.3px);
 }
 
 .pulau1 {
   width: 100vw;
-  transform: translateY(215%) translateZ(-15px) rotate(2deg) scale(2.5);
+  transform: translateY(200%) translateZ(-15px) rotate(2deg) scale(2.5);
   z-index: 9;
 }
 
 .laut5 {
   width: 100vw;
-  transform: translateY(200%) translateZ(-15px) scale(2.5);
+  transform: translateY(176%) translateZ(-15px) scale(2.5);
   z-index: 10;
 }
 
-
+.laut {
+  background: linear-gradient();
+}
 
 main {
   transform: translateZ(-5px) scale(1.5);
