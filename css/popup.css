@@ -1,0 +1,284 @@
+.modal-open {
+  position: absolute;
+  z-index: 999;
+  background: white;
+  width: 2.5vw;
+  height: 2.5vw;
+  border: none;
+  border-radius: 50%;
+  font-size: 100%;
+  padding: 0.5rem;
+  box-shadow: 0 1px 5px rgb(128, 128, 128);
+  transition: scale 0.2s;
+  transition: 0.5s;
+}
+
+.modal-open:hover {
+  transform: scale(1.1) translateY(-10px);
+}
+
+.modal {
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid white;
+  border-radius: 2vw;
+}
+
+dialog {
+  position: absolute;
+  background: none;
+  width: 50vw;
+  height: auto;
+  border: none;
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.visuallyappear {
+  opacity: 1;
+}
+
+dialog::backdrop {
+  display: none;
+}
+
+dialog button {
+  position: absolute;
+  top: -7px;
+  right: -10px;
+  background: whitesmoke;
+  border-radius: 50%;
+  border: none;
+  height: 30px;
+  width: 30px;
+  box-shadow: 0px 1px 3px gray;
+}
+
+dialog button img {
+  padding: 8px;
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  border-radius: 1.5rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slider-opening::-webkit-scrollbar {
+  display: none;
+}
+
+#slider::-webkit-scrollbar {
+  height: 0.5vw;
+}
+
+#slider::-webkit-scrollbar-thumb {
+  background: rgb(129, 129, 129);
+  border-radius: 0.25vw;
+}
+
+#slider::-webkit-scrollbar-track-piece:start {
+  margin-left: 1.3vw;
+}
+
+#slider::-webkit-scrollbar-track-piece:end {
+  margin-right: 1.3vw;
+}
+
+.slider div {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  align-items: center;
+}
+
+.slider-opening {
+    background: none;
+    height: 100vh;
+    position: relative;
+}
+
+.slider div img {
+  width: 180px;
+  height: 180px;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.slider div p {
+  margin: 1rem;
+  font-size: 1vw;
+}
+
+.slider div p span {
+  background: #ffffff;
+  border-radius: 0.3rem;
+  padding: 0 0.2rem;
+}
+
+.popup-nav {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: whitesmoke;
+  text-shadow: 0 0 10px black;
+}
+
+.bubble {
+  width: 3vw;
+  height: 3vw;
+  position: absolute;
+  bottom: -2vw;
+  right: -3vw;
+  background: rgba(245, 245, 245, 0.4);
+  border: white solid 2px;
+  border-radius: 2rem;
+}
+
+.bubble div {
+  width: 2vw;
+  height: 2vw;
+  position: absolute;
+  bottom: -1vw;
+  right: -2.5vw;
+  background: rgba(245, 245, 245, 0.4);
+  border: white solid 2px;
+  border-radius: 2rem;
+}
+
+.bubble div div {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  bottom: -0.2vw;
+  right: -1.7vw;
+  background: rgba(245, 245, 245, 0.4);
+  border: white solid 2px;
+  border-radius: 2rem;
+}
+
+.bubble2 {
+  bottom: -2vw;
+  left: -3vw;
+}
+
+.bubble2 div {
+  bottom: -1vw;
+  left: -2.5vw;
+}
+
+.bubble2 div div {
+  bottom: -0.2vw;
+  left: -1.7vw;
+}
+
+.popup1 {
+  top: -15vw;
+  left: 29vw;
+}
+
+.popup-trigger1 {
+  top: -2vw;
+  right: 13vw;
+  transition: 0.5s;
+}
+
+.popup2 {
+  top: -6vw;
+  left: 25vw;
+}
+
+.popup-trigger2 {
+  top: 5.2vw;
+  left: 16.8vw;
+}
+
+.popup3 {
+  top: -4.5vw;
+  left: 24.4vw;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.popup3 div div span {
+  background: whitesmoke;
+  color: black;
+}
+
+.popup-trigger3 {
+  top: 7vw;
+  left: 44.4vw;
+}
+
+.triangle {
+  position: absolute;
+  bottom: -50px;
+  left: 40%;
+  border-top: 50px solid rgba(245, 245, 245, 0.691);
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+.popup4 {
+  top: -11vw;
+  left: 22.7vw;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.popup4 div div span {
+  background: whitesmoke;
+  color: black;
+}
+
+.popup-trigger4 {
+  top: 3vw;
+  left: 15vw;
+}
+
+.popup5 {
+  top: -23vw;
+  left: 21vw;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.popup5 div div span {
+  background: whitesmoke;
+  color: black;
+}
+
+.popup-trigger5 {
+  top: -16.5vw;
+  right: 15vw;
+}
+
+.popup6 {
+  top: -25.5vw;
+  left: -55.5vw;
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.popup6 div div span {
+  background: whitesmoke;
+  color: black;
+}
+
+.popup-trigger6 {
+  top: -11.5vw;
+  left: 0vw;
+}
+
+.under-bubble, .under-bubble div, .under-bubble div div {
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.4);
+}

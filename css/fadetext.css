@@ -1,0 +1,140 @@
+.fadetext {
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  transform: translateZ(-20px) scale(3);
+  overflow-x: hidden;
+}
+
+.fadetext::-webkit-scrollbar {
+  display: none;
+}
+
+.fadetext h1 {
+  font-size: 8vw;
+  color: whitesmoke;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fadetext h2 {
+  font-size: 2vw;
+  color: rgb(245, 245, 245);
+  text-shadow: 1px 1px 7px rgb(5, 5, 5, 0.5);
+}
+
+.fadetext1 {
+  top: 0;
+}
+
+.fadetext2 {
+  top: 420vw;
+}
+
+.fadetext3 {
+  top: 1270vw;
+  display: flex;
+  flex-direction: column;
+  gap: 30vw;
+}
+
+.slider-opening {
+  flex-direction: column;
+  scroll-snap-type:none;
+  transform-style: preserve-3d;
+  perspective: 10px;
+}
+
+.fadetext2 .slider-opening{
+  scroll-snap-type: none;
+}
+
+.fadetext .slide-opening{
+  transform: translateZ(-20px) scale(3);
+  flex: 1 0 100%;
+}
+
+.slide-opening-2, .slide-opening-3{
+  margin-top: 100vw;
+  max-height: 50%;
+}
+
+.slide-opening h1 , .slide-opening h2{
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.slide-opening:first-child span{
+    font-size: 3vw;
+}
+
+.slide-penutupan {
+  z-index: 21;
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3vw;
+}
+
+.slide-penutupan:first-child {
+  flex-direction: column;
+}
+
+.slide-penutupan h2, .slide-penutupan img {
+  position: relative;
+  min-height: 100%;
+}
+
+.right {
+  left: 72vw;
+}
+
+.left {
+  left: -72vw;
+}
+
+.img {
+  opacity: 0;
+  scale: 0;
+}
+
+.slide-penutupan-animation {
+  left: 0vw;
+  right: 0vw;
+  opacity: 1;
+  scale: 1;
+  transition: 0.2s ease-in 0.2s;
+}
+
+.slide-penutupan:last-child {
+  margin-bottom: 10vw;
+}
+
+.slide-penutupan h2 {
+  font-size: 1.5vw;
+}
+
+.slide-penutupan img {
+  max-width: 15vw;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  left: -50%;
+}
+
+.hidden3 {
+  opacity: 0;
+  filter: blur(10px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  left: 0%;
+  transition: 1s all 0.5s;
+}
