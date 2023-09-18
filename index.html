@@ -5,68 +5,410 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VEZA</title>
-    <link rel="stylesheet" href="css/style.css">
-<style>
-        body {
-            background: rgb(2,0,36);
-            background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,79,142,1) 52%, rgba(41,163,247,1) 100%);
-        }
-    </style>
+    <title>OSEANTARA</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/fadetext.css">
+    <script defer src="js/popup.js"></script>
+    <script defer src="js/fadetext.js"></script>
 </head>
 
 <body>
-        <header>
-            <nav>
-                <a href="#"><img src="img-laut/VEZA.svg" alt="logo"></a>
-                <!-- <a href="https://www.freepik.com/free-photo/white-cloud-blue-sky_4201545.htm#query=sky&position=0&from_view=keyword&track=sph">Image by lifeforstock</a> -->
-                <ul>
-                    <li class="dropdown">
-                        <a href="#">Materi</a>
-                        <div class="underline1 underline"></div>
-                        <div class="dropdown-content">
-                            <a href="#">Perairan</a>
-                            <a href="#">Kelautan</a>
-                            <a href="#">Dasar Laut</a>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="#">Glosarium</a>
-                        <div class="underline2 underline"></div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">About</a>
-                        <div class="underline3 underline"></div>
-                        <div class="dropdown-content">
-                            <a href="about/about-web.html">About Web</a>
-                            <a href="about/about-us.html">About Us</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <a href="#"><img src="img-laut/VEZA.svg" alt="logo"></a>
+            <!-- <a href="https://www.freepik.com/free-photo/white-cloud-blue-sky_4201545.htm#query=sky&position=0&from_view=keyword&track=sph">Image by lifeforstock</a> -->
+            <ul>
+                <li>
+                    <a href="#">Glosarium</a>
+                    <div class="underline2 underline"></div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="underline3 underline"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="wrapper">
         <section class="paralax-sect">
-            <img src="img-laut/sky-background.png" alt="background" class="paralax sky-bg" width="1440">
-            <img src="img-laut/awan1.png" alt="awan1" class="paralax awan1" width="1440">
-            <img src="img-laut/awan2.png" alt="awan2" class="paralax awan2" width="1440">
-            <img src="img-laut/laut1.png" alt="laut1" class="paralax laut1" width="1440">
-            <img src="img-laut/pulau-panjang.png" alt="pulau2" class="paralax pulau2" width="1440">
-            <img src="img-laut/laut3.png" alt="laut3" class="paralax laut3" width="1440">
-            <img src="img-laut/pulau-kecil.png" alt="pulau3" class="paralax pulau3" width="1440">
-            <img src="img-laut/laut4.png" alt="laut4" class="paralax laut4" width="1440">
-            <img src="img-laut/pulau-besar-pendek.png" alt="pulau1" class="paralax pulau1" width="1440">
-            <img src="img-laut/laut5-trans.png" alt="laut5" class="paralax laut5" width="1440">
-            <div class="laut"></div>
+            <div class="fadetext fadetext1 paralax">
+                <div class="slider slider-opening">
+                    <div id="slide-opening-1" class="slide-opening slide-opening-1 hidden">
+                        <h1>OSEANTARA<br>
+                            <span>Welcome to This Web</span>
+                        </h1>
+                    </div>
+                    <div id="slide-opening-2" class="slide-opening slide-opening-2 hidden">
+                        <h2>OSEANTARA adalah website yang menjelaskan tentang Lautan Indonesia.
+                            Di Website ini kalian akan mengetahui apa saja potensi Lautan Indonesia sebagai Poros
+                            Maritim Dunia
+                        </h2>
+                    </div>
+                    <div id="slide-opening-3" class="slide-opening slide-opening-3 hidden">
+                        <h2>Selamat Belajar !!!
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <img src="img-laut/sky-background.png" alt="background" class="paralax sky-bg">
+            <img src="img-laut/awan1.png" alt="awan1" class="paralax awan1">
+            <img src="img-laut/awan2.png" alt="awan2" class="paralax awan2">
+            <img src="img-laut/laut1.png" alt="laut1" class="paralax laut1 laut">
+            <section class="paralax pulau2 pulau">
+                <button data-modal="modal1" data-modalhidden="modalhidden1" class="modal-open popup-trigger1"
+                    id="modalhidden1">?</button>
+                <section>
+                    <img src="img-laut/pulau-panjang.png" alt="pulau2" class="pulau2-1">
+                    <dialog class="modal popup1" id="modal1">
+                        <div class="slider" id="slider">
+                            <div id="slide-1-1">
+                                <p>Pasal 2 UU Nomor 5 Tahun 1983 tentang <span>Zona Ekonomi Eksklusif</span>
+                                    Indonesia
+                                    menetapkan ZEE sebagai
+                                    area perairan Indonesia yang mencakup 200 mil laut dari garis pantai. Indonesia
+                                    memiliki
+                                    kedaulatan penuh atas sumber daya alam dan aktivitas di ZEE, termasuk
+                                    penelitian,
+                                    perlindungan lingkungan, dan pelayaran-penerbangan yang bebas.</p>
+                            </div>
+                            <div id="slide-2-1">
+                                <p><span>Batas laut teritorial</span>, yang disebut juga sebagai territorial sea,
+                                    merupakan
+                                    sebuah batas
+                                    perairan yang ditarik sejauh 12 mil laut atau sekitar 22,224 kilometer dari
+                                    garis
+                                    dasar.
+                                    Garis dasar tersebut ditarik pada pantai ketika air laut sedang surut dan
+                                    menghubungkan
+                                    titik-titik ujung pulau. Indonesia memiliki kedaulatan penuh atas wilayah laut,
+                                    dasar
+                                    laut,
+                                    subsoil, dan udara yang berada di dalam batas laut teritorial tersebut.</p>
+                            </div>
+                            <div id="slide-3-1">
+                                <p><span>Landas Kontinen</span> adalah wilayah yang dikuasai yang terdiri dari dasar
+                                    laut
+                                    dan
+                                    tanah di
+                                    bawahnya di luar batas laut teritorial, yang diperpanjang hingga pinggiran tepi
+                                    kontinen
+                                    sesuai dengan penelitian ilmiah yang dilakukan, atau jarak 200 mil laut dari
+                                    garis
+                                    pangkal
+                                    di mana batas laut teritorial diukur, lebar tidak lebih dari 350 mil laut jika
+                                    ada
+                                    kelanjutan alamiah dari wilayah daratan dengan kedalaman sedimentasi yang sesuai
+                                    dan
+                                    tidak
+                                    melebihi 100 mil laut dari garis isobath 2500 meter.</p>
+                            </div>
+                        </div>
+                        <div class="popup-nav popup-nav1">
+                            <p><- Drag to Slide -></p>
+                        </div>
+                        <div class="bubble1 bubble">
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <button class="modal-close" data-modalappear="modalhidden1"><img src="img-PopUp/simbol-x.svg"
+                                alt="x"></button>
+                    </dialog>
+                </section>
+            </section>
+            <img src="img-laut/laut3.png" alt="laut3" class="paralax laut3 laut">
+            <img src="img-laut/pulau-kecil.png" alt="pulau3" class="paralax pulau3 pulau">
+            <img src="img-laut/laut4.png" alt="laut4" class="paralax laut4 laut">
+            <section class="paralax pulau1 pulau">
+                <button data-modal="modal2" data-modalhidden="modalhidden2" class="modal-open popup-trigger2"
+                    id="modalhidden2">?</button>
+                <section>
+                    <img src="img-laut/pulau-besar-pendek.png" alt="pulau2" class="pulau1-2">
+                    <dialog class="modal popup2" id="modal2">
+                        <div class="slider" id="slider">
+                            <div id="slide-1-2">
+                                <p><span>Hutan bakau</span> terdiri dari pohon bakau atau mangrove yang berfungsi
+                                    mencegah intrusi air laut
+                                    dan mencegah terjadinya pengikisan daratan dan juga merupakan rumah bagi
+                                    berbagai
+                                    krustasea
+                                    sepert kepiring, udang, teritip, dan juga berbagai spesies kerang dan ikan.
+                                    Selain
+                                    krustasea, hutan bakau juga menjadi habitat bagi berbagai jenis burung dan
+                                    monyet
+                                </p>
+                            </div>
+                            <div id="slide-2-2">
+                                <p>Salah satu sumber daya alam yang berlimpah di pantai Indonesia adalah <span>pohon
+                                        kelapa</span>. pohon
+                                    kelapa dengan nama latin Cocos nucifera adalah anggota keluarga palem Arecaceae
+                                    dan
+                                    juga
+                                    satu-satunya anggota marga Cocos. Pohon kelapa di pantai dimanfatkan daging
+                                    buahnya
+                                    untuk
+                                    dimakan, airnya untuk diminum, kayunya untuk dijadikan bahan furnitur, dan
+                                    sabut,
+                                    daun,
+                                    serta batoknya untuk kerajinan</p>
+                            </div>
+                            <div id="slide-3-2">
+                                <p><span>Pelabuhan</span> di indonesia meningkatkan perdagangan internasional.
+                                    Pelabuhan
+                                    berperan penting
+                                    dalam memfasilitasi perdagangan barang dan jasa seperti mengimpor bahan baku dan
+                                    mengekspor
+                                    barang jadi. Pelabuhan juga dapat digunakan untuk menyongkong industri
+                                    pariwisata
+                                    dengan
+                                    kedatangan kapal pesiar dan perahu wisata</p>
+                            </div>
+                            <div id="slide-4-2">
+                                <p>Perlu diketahui, bahwa dikawasan pesisir memiliki pasir yang mudah dilewati air,
+                                    dan
+                                    lemah
+                                    (tidak kuat mengikat seperti tanah liat) .Ada beberapa pantai yang pada
+                                    kedalaman
+                                    tertentu
+                                    memiliki air asin, namun di beberapa meter lebih ke dalam, akan ditemukan air
+                                    tawar.
+                                    Potensi
+                                    ini bisa dimanfaatkan untuk <span>budidaya ikan</span> payau, tawar, dan asin
+                                    dalam
+                                    1 lokasi yg sama dan
+                                    dalam jumlah yang banyak</p>
+                            </div>
+                            <div id="slide-5-2">
+                                <p>Air laut asin karena mengandung <span>garam</span>. Dilansir dari Natural History
+                                    Museum, natrium klorida
+                                    merupakan konstituen utama garam yang membentuk lebih dari 90 persen dari semua
+                                    ion
+                                    yang
+                                    ditemukan di air laut. Bumi terdiri dari 70 persen air laut, artinya air laut
+                                    menyediakan
+                                    sumber daya garam yang sangat banyak untuk memenuhi kebutuhan manusia</p>
+                            </div>
+                        </div>
+                        <div class="popup-nav popup-nav1">
+                            <p><- Drag to Slide -></p>
+                        </div>
+                        <div class="bubble2 bubble">
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <button class="modal-close" data-modalappear="modalhidden2"><img src="img-PopUp/simbol-x.svg"
+                                alt="x"></button>
+                    </dialog>
+                </section>
+            </section>
+            <img src="img-laut/laut5.png" alt="laut5" class="paralax laut5 laut">
+            <img src="img-laut/deep-sea.png" alt="dalam" class="paralax kelautan laut" id="dalam">
+            <img src="img-laut/dasar-laut.png" alt="dasarlaut" class="paralax dasarlaut laut" id="dasarlaut">
+
         </section>
-
-        <main>
-        </main>
-
-        <footer>
-
-        </footer>
+        <section class="paralax-sect">
+            <div class="fadetext fadetext2 paralax">
+                <div class="slider slider-opening">
+                    <div id="slide-opening-1" class="slide-opening slide-opening-1 hidden3">
+                        <h1>Lautan Dangkal</h1>
+                    </div>
+                    <div id="slide-2" class="slide-opening slide-opening-2 hidden3">
+                        <h2>Lautan dangkal Indonesia adalah salah satu aset alam yang sangat berharga dan memiliki
+                            potensi besar. Terletak di antara dua samudra besar, yaitu Samudra Pasifik dan Samudra
+                            Hindia, wilayah perairan dangkal Indonesia menawarkan beragam peluang ekonomi, sumber daya
+                            alam, dan ekosistem yang kaya.
+                        </h2>
+                    </div>
+                    <div id="slide-3" class="slide-opening slide-opening-3 hidden3">
+                        <h2>Kalian bisa cari tahu, apa saja sih potensi - potensi yang ada di lautan Indonesia di bawah
+                            sini
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <img src="img-laut/ikan0.png" class="paralax ikan0-1" alt="ikan0">
+            <img src="img-laut/ikan0.png" class="paralax ikan0-2" alt="ikan0">
+            <!-- https://www.pngkey.com/detail/u2a9o0i1w7a9w7t4_fish-silhouette-clip-art-at-getdrawings-school-of/ -->
+            <section class="paralax corals1">
+                <button data-modal="modal3" data-modalhidden="modalhidden3" class="modal-open popup-trigger3"
+                    id="modalhidden3">?</button>
+                <section>
+                    <img src="img-laut/corals1.png" alt="coral1" class="corals1-1">
+                    <dialog class="modal popup3" id="modal3">
+                        <div class="slider" id="slider">
+                            <div>
+                                <p>Nah potensi sda yang terdapat disini ada <span>rumput laut.</span> Rumput laut tumbuh
+                                    di dasar laut karena membutuhkan fotosintesis. Pertumbuhan rumput laut di pengaruhi
+                                    oleh
+                                    kondisi lingkungan sekitarnya seperti intensitas cahaya, suhu, salinitas, pH,
+                                    nitrat, fosfat. Jenis rumput laut ini berpotensi dikembangkan untuk ekspor karena
+                                    mengandung agar agar yang tinggi dan bermanfaat untuk berbagai keperluan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="triangle"></div>
+                        <button class="modal-close" data-modalappear="modalhidden3"><img src="img-PopUp/simbol-x.svg"
+                                alt="x"></button>
+                    </dialog>
+                </section>
+            </section>
+            <img src="img-laut/corals2.png" alt="coral2" class="paralax corals2">
+            <img src="img-laut/ikan-grup3.png" alt="ikan-grup3" class="paralax ikan3-grup">
+            <section class="paralax corals3-left">
+                <button data-modal="modal4" data-modalhidden="modalhidden4" class="modal-open popup-trigger4"
+                    id="modalhidden4">?</button>
+                <section>
+                    <img src="img-laut/corals3-left.png" alt="coral3" class="corals3-left-1">
+                    <dialog class="modal popup4" id="modal4">
+                        <div class="slider" id="slider">
+                            <div>
+                                <p>Pertumbuhan <span>terumbu karang</span> akan baik pada kondisi air yang jernih dan
+                                    dangkal dengan
+                                    kedalaman tidak lebih dari 18 meter. Keanekaragaman hayati terumbu karang sebagai
+                                    potensi sumber daya laut di Indonesia juga yang tertinggi di dunia. Di dalamnya
+                                    terdapat banyak jenis ikan,moluska, udang-udangan, dan karang. Terumbu karang
+                                    memiliki fungsi ekonomis yaitu potensi wisata bahari khususnya ekowisata terumbu
+                                    karang, fungsi keseimbangan pantai yang dapat menjadi barrier/pemecah gelombang
+                                    alami, dan dapat juga digunakan sebagai bahan baku perhiasan,industri maupun
+                                    obat-obatan.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bubble2 bubble under-bubble">
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <button class="modal-close" data-modalappear="modalhidden4"><img src="img-PopUp/simbol-x.svg"
+                                alt="x"></button>
+                    </dialog>
+                </section>
+            </section>
+            <section></section>
+            <section class="paralax corals3-right">
+                <button data-modal="modal6" data-modalhidden="modalhidden6" class="modal-open popup-trigger6"
+                    id="modalhidden6">?</button>
+                <section>
+                    <img src="img-laut/corals3-right.png" alt="coral3" class="paralax corals3-right-1">
+                    <dialog class="modal popup6" id="modal6">
+                        <div class="slider" id="slider">
+                            <div id="slide-1-6">
+                                <p>Terkenal sebagai negara kepualauan, Indonesia terdiri dari gugusan pulau yang
+                                    dipisahkan oleh lautan. Namun bukan sekadar lautan, tapi juga pemandangan di
+                                    dalamnya begitu menakjubkan, sehingga tak heran jika negara yang terletak di
+                                    khatulistiwa ini memiliki wisata bahari yang begitu menjanjikan. Tak hanya lautnya
+                                    yang biru jernih, hamparan pasir dengan beragam tekstur dan warna pun terhampar di
+                                    beberapa pulau.
+                                </p>
+                            </div>
+                            <div id="slide-2-6">
+                                <p>Tak lengkap rasanya jika liburan ke pantai tanpa melakukan snorkeling untuk
+                                    berinteraksi langsung dengan hewan-hewan laut yang menggemaskan. Tak perlu lisensi
+                                    hingga peralatan canggih seperti diving, aktivitas snorkeling bisa kamu lakukan
+                                    dengan peralatan yang lebih sederhana. Dari Sabang sampai Merauke, kamu bisa
+                                    menemukan banyak perairan cantik yang cocok buat snorkeling
+                                </p>
+                            </div>
+                        </div>
+                        <div class="popup-nav popup-nav1">
+                            <p><- Drag to Slide -></p>
+                        </div>
+                        <div class="bubble1 bubble under-bubble">
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <button class="modal-close" data-modalappear="modalhidden6"><img src="img-PopUp/simbol-x.svg"
+                                alt="x"></button>
+                    </dialog>
+                </section>
+            </section>
+            <img src="img-laut/corals3-right.png" alt="coral3" class="paralax corals3-right">
+            <section class="paralax ikan-grup">
+                <button data-modal="modal5" data-modalhidden="modalhidden5" class="modal-open popup-trigger5"
+                    id="modalhidden5">?</button>
+                <section>
+                    <img src="img-laut/ikan-grup.png" alt="ikan-grup" class="paralax ikan-grup-1">
+                    <dialog class="modal popup5" id="modal5">
+                        <div class="slider" id="slider">
+                            <div id="slide-1-5">
+                                <p>Salah satu potensi terbanyak yang terdapat di laut dangkal
+                                    adalah <span>ikan</span> .potensi tersebut terdiri dari sembilan kelompok SDI, yaitu
+                                    ikan pelagis
+                                    kecil, ikan pelagis besar, ikan demersal, ikan karang, udang penaeid, lobster,
+                                    kepiting, rajungan, dan cumi-cumi.
+                            </div>
+                        </div>
+                        <div class="bubble1 bubble under-bubble">
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <button class="modal-close" data-modalappear="modalhidden5"><img src="img-PopUp/simbol-x.svg"
+                                alt="x"></button>
+                    </dialog>
+                </section>
+            </section>
+            <img src="img-laut/corals4.png" alt="coral4" class="paralax corals4">
+            <img src="img-laut/corals5.png" alt="coral5" class="paralax corals5">
+            <img src="img-laut/ikan-grup2.png" alt="ikan-grup2" class="paralax ikan2-grup">
+            <img src="img-laut/tebing2.png" alt="tebing" class="paralax tebing">
+            <img src="img-laut/hiu.png" alt="hiu" class="paralax hiu">
+            <div class="fadetext fadetext3 paralax">
+                <div id="slide-penutupan-1" class="slide-penutupan slide-penutupan-1">
+                    <h1>Tantangan</h1>
+                    <h2>Seperti yang kita tahu, laut Indonesia adalah salah satu aset alam yang luar biasa dan memiliki
+                        potensi yang sangat besar untuk memberikan manfaat ekonomi dan lingkungan. Namun, dibalik
+                        potensi besar yang ada di lautan Indonesia ada beberapa tantangan yang perlu diatasi agar
+                        potensi ini dapat dioptimalkan sepenuhnya.</h2>
+                </div>
+                <div id="slide-penutupan-2" class="slide-penutupan slide-penutupan-2">
+                    <h2 class="slide-penutupan-items left">Kurangnya promosi dan pemasaran yang efektif. Banyak
+                        destinasi wisata bahari masih kurang
+                        dikenal, bahkan di kalangan penduduk lokal. Promosi yang efektif sangat penting untuk membuat
+                        destinasi lebih dikenal, menarik lebih banyak wisatawan.
+                    </h2>
+                    <img src="img-PopUp/icon-promosi.svg" alt="icon-promosi" class="slide-penutupan-items img">
+                    <!-- Free Promotion Icon by Jemis Mali on IconScout -->
+                </div>
+                <div id="slide-penutupan-3" class="slide-penutupan slide-penutupan-3">
+                    <img src="img-PopUp/icon-sdm.svg" alt="icon-sdm" class="slide-penutupan-items img">
+                    <!-- Free Human Resources Icon by libertetstudio on IconScout -->
+                    <h2 class="slide-penutupan-items right">Kurangnya sumber daya manusia yang terlatih dan berkualitas
+                        tinggi. Hal ini sangat penting untuk
+                        mengembangkan pariwisata bahari. seperti mengelola destinasi dan memberikan layanan kepada
+                        wisatawan.
+                    </h2>
+                </div>
+                <div id="slide-penutupan-3" class="slide-penutupan slide-penutupan-4">
+                    <img src="img-PopUp/building.svg" alt="building" class="slide-penutupan-items img">
+                    <!-- Free Building Icon by Sooodesign . on IconScout -->
+                    <h2 class="slide-penutupan-items left">Infrastruktur yang mendukung pertumbuhan pariwisata, seperti
+                        jalan, pelabuhan, hotel,
+                        transportasi, dan fasilitas lainnya, masih kurang di banyak daerah. Keberadaan infrastruktur
+                        yang memadai sangat penting untuk mengoptimalkan potensi pariwisata sebuah wilayah.
+                    </h2>
+                </div>
+                <div id="slide-penutupan-3" class="slide-penutupan slide-penutupan-5">
+                    <img src="img-PopUp/coral.svg" alt="coral" class="slide-penutupan-items img">
+                    <!-- Free Coral Icon by Soni Sokell on IconScout -->
+                    <h2 class="slide-penutupan-items right">kerusakan lingkungan juga menjadi masalah yang cukup besar.
+                        Deforestasi, polusi, dan kerusakan
+                        terumbu karang adalah masalah yang sering terjadi. Dalam mengembangkan sektor pariwisata,
+                        pengelolaan yang berkelanjutan dan pelestarian alam harus menjadi fokus utama.
+                    </h2>
+                </div>
+                <div id="slide-penutupan-3" class="slide-penutupan slide-penutupan-6 hidden3">
+                    <h2>TAMAT
+                    </h2>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
