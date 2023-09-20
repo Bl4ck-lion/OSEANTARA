@@ -124,12 +124,16 @@ dialog button img {
 
 .popup-nav {
   position: absolute;
-  bottom: -30px;
+  bottom: -20%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   color: whitesmoke;
   text-shadow: 0 0 10px black;
+}
+
+.popup-nav p {
+  font-size: 1vw;
 }
 
 .bubble {
@@ -240,7 +244,7 @@ dialog button img {
 }
 
 .popup-trigger4 {
-  top: 3vw;
+  top: 0vw;
   left: 15vw;
 }
 
@@ -262,7 +266,7 @@ dialog button img {
 }
 
 .popup6 {
-  top: -25.5vw;
+  top: -20.5vw;
   left: -55.5vw;
   color: whitesmoke;
   background: rgba(0, 0, 0, 0.4);
@@ -274,7 +278,7 @@ dialog button img {
 }
 
 .popup-trigger6 {
-  top: -11.5vw;
+  top: -9.5vw;
   left: 0vw;
 }
 

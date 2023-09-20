@@ -26,7 +26,7 @@ header {
 header img {
   /*Box model stuff*/
   width: 80px;
-  margin: 10px 0 5px;
+  margin: 10px 0;
 }
 
 header nav {
